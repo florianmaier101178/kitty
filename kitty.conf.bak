@@ -1,0 +1,47 @@
+#--------------------------------------------------------------------------------
+# leader key: ctrl+shift
+#--------------------------------------------------------------------------------
+
+#--------------------------------------------------------------------------------
+# fonts
+#--------------------------------------------------------------------------------
+font_family         JetBrains Mono Regular
+bold_font           JetBrains Mono Bold
+italic_font         JetBrains Mono Italic
+bold_italic_font    JetBrains Mono Bold Italic
+
+font_size 13.0
+
+
+#--------------------------------------------------------------------------------
+# key bindings
+#--------------------------------------------------------------------------------
+# clipboard
+map super+v         paste_from_clipboard
+map super+c         copy_or_interrupt
+
+# font size
+map super+plus      increase_font_size
+map super+minus     decrease_font_isze
+map super+backspace change_font_size all 0
+
+
+#--------------------------------------------------------------------------------
+# scrollback
+#--------------------------------------------------------------------------------
+scrollback_lines 99999
+
+
+#--------------------------------------------------------------------------------
+# open url in default web browser
+#--------------------------------------------------------------------------------
+# see https://sw.kovidgoyal.net/kitty/kittens/hints/
+# see https://sw.kovidgoyal.net/kitty/conf/#opt-kitty.open_url_with
+# see https://sw.kovidgoyal.net/kitty/conf/#select-and-act-on-visible-text
+
+map ctrl+shift+e    open_url_with_hints
+open_url_with       default
+url_prefixes        http https
+
+
+
