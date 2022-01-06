@@ -3,6 +3,32 @@
 #--------------------------------------------------------------------------------
 
 #--------------------------------------------------------------------------------
+# infos - https://sw.kovidgoyal.net/kitty/overview/
+#--------------------------------------------------------------------------------
+# - open kitty.conf in separate kitty window: ctrl+shift+f2
+# - reload kitty.conf: ctrl+shift+f5
+# - debug kitty.conf: ctrl+shift+f6
+
+
+#--------------------------------------------------------------------------------
+# scrolling
+#--------------------------------------------------------------------------------
+# - scroll line up: ctrl+shift+up
+# - scroll line down: ctrl+shift+down
+# - scroll page up: ctrl+shift+page_up
+# - scroll page down: ctrl+shift+page_down
+# - scroll to top: ctrl+shift+home
+# - scroll to bottom: ctrl+shift+end
+
+
+#--------------------------------------------------------------------------------
+# terminal bell
+#--------------------------------------------------------------------------------
+enable_audio_bell       no
+visual_bell_duration    0.0
+
+
+#--------------------------------------------------------------------------------
 # fonts
 #--------------------------------------------------------------------------------
 font_family         JetBrains Mono Regular
@@ -27,6 +53,21 @@ map super+backspace change_font_size all 0
 
 
 #--------------------------------------------------------------------------------
+# window / tab settings
+#--------------------------------------------------------------------------------
+# - new tab: ctrl+shift+t ### tab navigation with ctrl+shift+(left|right)
+# - new window: ctrl+shift+enter
+# - switch window layout: ctrl+shift+l
+
+map ctrl+shift+alt+up       neighboring_window top
+map ctrl+shift+alt+left     neighboring_window left
+map ctrl+shift+alt+right    neighboring_window right
+map ctrl+shift+alt+down     neighboring_window bottom
+
+# - toggle fullscreen: ctrl+shift+f11
+
+
+#--------------------------------------------------------------------------------
 # scrollback
 #--------------------------------------------------------------------------------
 scrollback_lines 99999
@@ -44,4 +85,13 @@ open_url_with       default
 url_prefixes        http https
 
 
+#--------------------------------------------------------------------------------
+# install theme kitten
+#--------------------------------------------------------------------------------
+# on terminal: $ kitty +kitten themes
 
+# BEGIN_KITTY_THEME
+# Molokai
+include current-theme.conf
+# END_KITTY_THEME
+#
